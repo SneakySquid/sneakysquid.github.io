@@ -38,6 +38,7 @@ html {
 #hero-text a {
 	font-size: 35px;
 	text-align: center;
+	text-decoration: none;
 	color: white;
 	opacity: 0.6;
 	transition: 0.25s;
@@ -69,6 +70,7 @@ html {
 	#hero-text a {
 		font-size: clamp(10px, 3vw, 35px);
 		text-align: center;
+		text-decoration: none;
 		color: white;
 		opacity: 0.6;
 		transition: 0.25s;
