@@ -11,35 +11,16 @@ html {
     height: 100%;
     background-color: #253CA8;
     background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0)), url("/assets/background.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url("/assets/background.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.scroll-down a {
-    position: absolute;
-    cursor: pointer;
-    bottom: 20px;
-    left: 50%;
-    z-index: 2;
-    display: inline-block;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    opacity: 0.5;
-    transition: opacity 0.3s;
-    text-decoration: none;
-}
-
-.scroll-down a:hover {
-    opacity: 1;
-}
-
 #hero-text {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.2);
     color: white;
     font-weight: bold;
-    border: 3px solid white;
     position: absolute;
     top: 50%;
     left: 50%;
