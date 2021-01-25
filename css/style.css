@@ -1,0 +1,111 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    background-color: #253CA8;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0)), url("/assets/background.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scroll-down a {
+    position: absolute;
+    cursor: pointer;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    text-decoration: none;
+}
+
+.scroll-down a:hover {
+    opacity: 1;
+}
+
+#hero-text {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-weight: bold;
+    border: 3px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 675px;
+    padding: 20px;
+    text-align: center;
+}
+
+#hero-text h1 {
+    font-size: 80px;
+}
+
+#hero-text p {
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #hero-text {
+        background-color: rgba(0, 0, 0, 0.4);
+        color: white;
+        font-weight: bold;
+        border: 3px solid white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: clamp(0px, 80%, 675px);
+        padding: 20px;
+        text-align: center;
+    }
+    #hero-text h1 {
+        font-size: clamp(16px, 10vw, 80px);
+    }
+    #hero-text p {
+        font-size: clamp(6px, 3vw, 25px);
+    }
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #A8A8A8;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.25s ease;
+}
+
+#navbar a:hover {
+    background-color: #2E86C1;
+    color: #FFF;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
