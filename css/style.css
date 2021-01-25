@@ -31,12 +31,11 @@ html {
 
 #hero-text h1 {
 	font-size: 80px;
-	text-decoration: underline;
 	color: white;
 }
 
 #hero-text a {
-	font-size: 35px;
+	font-size: 40;
 	text-align: center;
 	text-decoration: none;
 	color: white;
@@ -68,7 +67,7 @@ html {
 	}
 
 	#hero-text a {
-		font-size: clamp(10px, 3vw, 35px);
+		font-size: clamp(12px, 3vw, 40);
 		text-align: center;
 		text-decoration: none;
 		color: white;
