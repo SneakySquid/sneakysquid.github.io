@@ -36,8 +36,15 @@ html {
 }
 
 #hero-text a {
-	font-size: 25px;
+	font-size: 35px;
+	text-align: center;
 	color: white;
+	opacity: 0.6;
+	transition: 0.25;
+}
+
+#hero-text a:hover {
+	opacity: 1;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -60,7 +67,14 @@ html {
 	}
 
 	#hero-text a {
-		font-size: clamp(6px, 3vw, 25px);
+		font-size: clamp(10px, 3vw, 35px);
+		text-align: center;
 		color: white;
+		opacity: 0.6;
+		transition: 0.25;
+	}
+
+	#hero-text a:hover {
+		opacity: 1;
 	}
 }
